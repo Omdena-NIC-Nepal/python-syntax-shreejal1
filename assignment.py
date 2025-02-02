@@ -96,7 +96,11 @@ def logical_ops(x, y):
     Returns:
         dict: Results of logical operations
     """
-    pass
+    return {
+        "and": x and y,  # and operator use
+        "or": x or y,    # or opertor use
+        "not_x": not x   # not operator use
+    }
 
 def bitwise_ops(a, b):
     """
