@@ -45,7 +45,9 @@ def list_operations(numbers):
     Returns:
         tuple: (sum, max, min)
     """
-    pass
+    if not numbers:  # this handles empty list case
+        return (0, None, None)
+    return (sum(numbers), max(numbers), min(numbers)) # sum of numbers, maximum number of the list, minimum number of the list
 
 def dict_operations(students_dict):
     """
