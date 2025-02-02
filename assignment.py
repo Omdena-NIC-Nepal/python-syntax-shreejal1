@@ -111,4 +111,8 @@ def bitwise_ops(a, b):
     Returns:
         dict: Results of bitwise operations
     """
-    pass
+    return {
+        "and": a & b,  # AND
+        "or": a | b,   # OR
+        "xor": a ^ b   # XOR
+    }
