@@ -7,7 +7,7 @@ def format_string(name, age):
     Returns:
         str: Formatted string
     """
-    return f"My name is {name} and I am {age} years old"
+    return f"My name is {name} and I am {age} years old" # f can be used as alterntive for .format strings
 
 def conditional_check(number):
     """
@@ -17,11 +17,11 @@ def conditional_check(number):
     Returns:
         str: "Greater", "Lesser", or "Equal"
     """
-    if number > 10:
+    if number > 10: # checking for greater
         return "Greater"
-    elif number < 10:
+    elif number < 10: # checking for smaller
         return "Lesser"
-    else:
+    else: # could be done with = sign too, smaller and greater taken already so else will also wprk
         return "Equal"
 
 def loop_sum(n):
@@ -57,7 +57,7 @@ def dict_operations(students_dict):
     Returns:
         list: Names of students with scores > 80
     """
-    pass
+    return [name for name, score in students_dict.items() if score > 80]
 
 def set_operations(list1, list2):
     """
